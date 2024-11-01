@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/gamingFrikis-logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gaming Frikis</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo-container">
+            <img src="./img/gamingFrikis-logo.png" alt="Logo de Gaming Frikis">
+        </a>
+        <div class="search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5dcedd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text">
+        </div>
+        <nav class="nav">
+            <ul id="menu-list">
+                <li class="nav-links"><a href="#">Armá tu PC</a></li>
+                <li class="nav-links"><a href="#products">Productos</a></li>
+                <li class="nav-links"><a href="#contact">Contáctos</a></li>
+                <li class="nav-links iniciar-sesion"><a href="#">Iniciar Sesión</a></li>
+                <li class="nav-links cart"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                </a></li>
+            </ul>
+            <div class="bars">
+                <i class="fa-solid fa-bars-staggered" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BANNER -->
+        <section class="banner">
+            <div class="txt-banner">
+                <h1>
+                    APROVECHA <br>LA HOT WEEK 
+                </h1>
+                <p>ENVIOS GRATIS</p>
+                <button>Ver Más</button>
+            </div>
+            <picture>
+                <img src="img/10-Off.webp" alt="banner de 10% de descuento">
+            </picture>
+        </section>
+
+        <!-- BRANDS -->
+        <div class="brands-container">
+            <img src="./img/brands/amdLogo.png" alt="logo de AMD" class="brand-logo">
+            <img src="./img/brands/redragon.png" alt="logo de Redragon" class="brand-logo rd">
+            <img src="./img/brands/brand_menu_logo-asus.png" alt="logo de ASUS" class="brand-logo">
+            <img src="./img/brands/brand_menu_logo-intel.png" alt="logo de Intel" class="brand-logo">
+            <img src="./img/brands/brand_menu_logo-razer.png" alt="logo de Razer" class="brand-logo">
+            <img src="./img/brands/brand_menu_logo-seagate.png" alt="logo de Seagate" class="brand-logo">
+            <img src="./img/brands/brand_menu_logo-corsair.png" alt="logo de Corsair" class="brand-logo">
+            <img src="./img/brands/brand_menu_logo-hyperx.png" alt="logo de HyperX" class="brand-logo">
+            <img src="./img/brands/brand_menu_logo-nvidia.png" alt="logo de Nvidia" class="brand-logo">
+            <img src="./img/brands/brand_menu_logo-logitech.png" alt="logo de Logitech" class="brand-logo">
+            <img src="./img/brands/brand_menu_logo-kingston.png" alt="logo de Kingston" class="brand-logo">
+            <img src="./img/brands/brand_menu_logo-gigabyte.png" alt="logo de Gigabyte" class="brand-logo">
+        </div>
+
+        <section class="busqueda-box-container">
+            <h2>¿Qué estás buscando?</h2>
+            <div class="busqueda-box">
+                <a href="#" class="busqueda-box-element">
+                    <h3>Placas de Video</h3>
+                </a>
+                <a href="#" class="busqueda-box-element">
+                    <h3>Memorias RAM</h3>
+                </a>
+                <a href="#" class="busqueda-box-element">
+                    <h3>Monitores</h3>
+                </a>
+                <a href="#" class="busqueda-box-element">
+                    <h3>Procesadores</h3>
+                </a>
+                <a href="#" class="busqueda-box-element">
+                    <h3>Mouse Gamer</h3>
+                </a>
+                <a href="#" class="busqueda-box-element">
+                    <h3>Otro</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Title: PRODUCTOS -->
+        <div class="titles" id="products">
+            <h2>Destacados</h2>
+        </div>
+        <!-- CARDS -->
+        <section class="card-container">
+
+            <div class="card">
+                <a href="#">
+                    <picture class="card-img">
+                        <img src="./img/products/Procesador-Intel-Core-i5-14400-4.webp" alt="">
+                    </picture>
+                    <div class="card-txt">
+                        <p class="card-price">$ 000.00</p>
+                        <p class="card-desc">Procesador Intel Core i5 14400 4.7 Ghz Raptor Lake 1700</p>
+                    </div>
+                    <div class="card-span">
+                        <p>10% off</p>
+                    </div>
+                    <div class="card-item-container">
+                        <a href="#" class="card-item-buy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9220d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <picture class="card-img">
+                        <img src="./img/products/WD-Green-Sata-SSD-1T.webp" alt="">
+                    </picture>
+                    <div class="card-txt">
+                        <p class="card-price">$ 000.00</p>
+                        <p class="card-desc">Disco sólido interno Western Digital WD Green WDS100T3G0A 3 1TB verde</p>
+                    </div>
+                    <div class="card-span">
+                        <p>10% off</p>
+                    </div>
+                    <div class="card-item-container">
+                        <a href="#" class="card-item-buy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9220d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <picture class="card-img">
+                        <img src="./img/products/GIGABYTE-A520M-K-V2.webp" alt="">
+                    </picture>
+                    <div class="card-txt">
+                        <p class="card-price">$ 000.00</p>
+                        <p class="card-desc">Motherboard Gigabyte Amd A520m K V2 Ddr4 Gamer Color Negro</p>
+                    </div>
+                    <div class="card-span">
+                        <p>10% off</p>
+                    </div>
+                    <div class="card-item-container">
+                        <a href="#" class="card-item-buy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9220d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <picture class="card-img">
+                        <img src="./img/products/AMD-RYZEN-7-5700X-3.4ghz.webp" alt="">
+                    </picture>
+                    <div class="card-txt">
+                        <p class="card-price">$ 000.00</p>
+                        <p class="card-desc">Procesador gamer AMD Ryzen 7 5700X y 3.4GHz</p>
+                    </div>
+                    <div class="card-span">
+                        <p>10% off</p>
+                    </div>
+                    <div class="card-item-container">
+                        <a href="#" class="card-item-buy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9220d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card card-last">
+                <a href="#">
+                    <picture class="card-img">
+                        <img src="./img/products/HyperX-FuryBlack.webp" alt="">
+                    </picture>
+                    <div class="card-txt">
+                        <p class="card-price">$ 000.00</p>
+                        <p class="card-desc">Memoria RAM Fury Beast DDR4 gamer color negro 8GB Kingston</p>
+                    </div>
+                    <div class="card-span">
+                        <p>10% off</p>
+                    </div>
+                    <div class="card-item-container">
+                        <a href="#" class="card-item-buy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9220d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        </a>
+                    </div>
+                    <div class="btn-side">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+            
+        </section>
+
+        <!-- Title: PRODUCTOS -->
+        <div class="titles">
+            <h2>Más buscados</h2>
+        </div>
+
+        <section class="card-container">
+
+            <div class="card">
+                <a href="#">
+                    <picture class="card-img">
+                        <img src="./img/products/MonitorGigabyte.webp" alt="">
+                    </picture>
+                    <div class="card-txt">
+                        <p class="card-price">$ 000.00</p>
+                        <p class="card-desc">Monitor gamer Gigabyte G24F 2 LCD negro 110/220V</p>
+                    </div>
+                    <div class="card-span">
+                        <p>10% off</p>
+                    </div>
+                    <div class="card-item-container">
+                        <a href="#" class="card-item-buy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9220d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <picture class="card-img">
+                        <img src="./img/products/Gabinete-Sentey.webp" alt="">
+                    </picture>
+                    <div class="card-txt">
+                        <p class="card-price">$ 000.00</p>
+                        <p class="card-desc">Gabinete Gamer Sentey T20 Rgb Vidrio Templado 4 Fan Rgb</p>
+                    </div>
+                    <div class="card-span">
+                        <p>10% off</p>
+                    </div>
+                    <div class="card-item-container">
+                        <a href="#" class="card-item-buy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9220d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <picture class="card-img">
+                        <img src="./img/products/GeForce-RTX-4070Ti.webp" alt="">
+                    </picture>
+                    <div class="card-txt">
+                        <p class="card-price">$ 000.00</p>
+                        <p class="card-desc">Tarjeta De Video Asus Tuf Rtx 4070 Ti Super Oc 16gb Gddr6x</p>
+                    </div>
+                    <div class="card-span">
+                        <p>10% off</p>
+                    </div>
+                    <div class="card-item-container">
+                        <a href="#" class="card-item-buy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9220d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <picture class="card-img">
+                        <img src="./img/products/Mouse-Logitech.webp" alt="">
+                    </picture>
+                    <div class="card-txt">
+                        <p class="card-price">$ 000.00</p>
+                        <p class="card-desc">Mouse gamer de juego LogitechG Series Hero G502 negro</p>
+                    </div>
+                    <div class="card-span">
+                        <p>10% off</p>
+                    </div>
+                    <div class="card-item-container">
+                        <a href="#" class="card-item-buy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9220d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        </a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card card-last">
+                <a href="#">
+                    <picture class="card-img">
+                        <img src="./img/products/Notebook-Gfast-N-737-R7-8Gb-Ssd.webp" alt="">
+                    </picture>
+                    <div class="card-txt">
+                        <p class="card-price">$ 000.00</p>
+                        <p class="card-desc">Notebook Gfast N-737 Ryzen 7 8Gb Ssd 480Gb 15.6" Win11</p>
+                    </div>
+                    <div class="card-span">
+                        <p>10% off</p>
+                    </div>
+                    <div class="card-item-container">
+                        <a href="#" class="card-item-buy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9220d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        </a>
+                    </div>
+                </a>
+                <div class="btn-side">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="showmore">
+            <a href="#">
+                <h3>Mostrar más <span><i class="fa-solid fa-caret-down"></i></span></h3>
+            </a>
+        </div>
+
+        <!-- Title: REVIEW -->
+        <div class="titles">
+            <h2>Clientes</h2>
+        </div>
+        <section class="review-container">
+            <div class="reviewCard">
+                <img src="https://placehold.co/200x200" alt="Imagen de producto" class="reviewCard-image">
+                <div class="reviewCard-content">
+                    <h2 class="reviewCard-title">User123</h2>
+                    <span><i>12-03-2024</i></span>
+                    <p class="reviewCard-text">Este producto superó todas mis expectativas. La calidad es excelente y el servicio al cliente fue excepcional. Definitivamente lo recomiendo.</p>
+
+                    <div class="reviewCard-rating">
+                        <span class="star">★</span>  
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviewCard">
+                <img src="https://placehold.co/200x200" alt="Imagen de producto" class="reviewCard-image">
+                <div class="reviewCard-content">
+                    <h2 class="reviewCard-title">LeMut04</h2>
+                    <span><i>26-10-2024</i></span>
+                    <p class="reviewCard-text">Este producto me sorprendió. Buena calidad y el servicio al cliente de 10. ¡Lo recomiendo!</p>
+
+                    <div class="reviewCard-rating">
+                        <span class="star">★</span>  
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Title: CONTACTOS -->
+        <div class="titles">
+            <h2>Contactos</h2>
+        </div>
+        <!-- Formulario -->
+        <section class="contact-container" id="contact">
+            <form class="form">
+                <input type="text" placeholder="Tu Nombre">
+                <input type="tel" placeholder="teléfono">
+                <input type="email" placeholder="Correo electrónico">
+                <textarea class ="txtArea" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button type="submit">
+                    Enviar Mensaje &nbsp;<i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </form>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1952.0481221152954!2d-58.4853247426219!3d-34.63094294396922!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9be2a1794fb%3A0x49c4cca91c2095c9!2sAv.%20Avellaneda%204092%2C%20C1407EJU%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1730436600339!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>Todos los derechos reservados <span>Gaming Frikis</span> &copy; 2024</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/6fe60aeb7e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
