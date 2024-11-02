@@ -237,6 +237,7 @@ main{
 }
 .busqueda-box-element{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(var(--nav-links-hover2),  #003566);
@@ -247,7 +248,10 @@ main{
 .busqueda-box-element:hover{
     background: linear-gradient(#003566, var(--nav-links-hover2));
 }
-
+.busqueda-box-element img{
+    height: 90px;
+    filter: invert(1);
+}
 
 
 /*TITLES*/
@@ -403,6 +407,7 @@ main{
 .reviewCard-image{
     width: 150px;
     height: 150px;
+    object-fit: cover;
     margin: 0 auto;
     grid-column: 1/1;
     border-radius: 50%;
@@ -481,12 +486,54 @@ main{
 
 /*FOOTER*/
 .footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     background-color: var(--primary-color);
     padding: 30px 0px;
     text-align: center;
+    justify-content: center;
+    gap: 120px;
+    align-items: center;
     color: var(--nav-links);
     user-select: none;
 }
+.item-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sheet-color);
+    padding: 18px 1px;
+    border-radius: 50%;
+}
+.s-wsp:hover{
+    background-color: #1baa1b;
+}
+.s-ig:hover{
+    background-color: #b52e8a;
+}
+.s-fb:hover{
+    background-color: #0044ff;
+}
+.footer .redes-item-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 14px;
+}
+.redes-item-container p{
+    grid-column: 1/4;
+}
+.redes-item-container .fb .ig, .wsp{
+    grid-row: 2;
+}
+
+.ig,.fb,.wsp{
+    filter: invert(1);
+    height: 20px;
+    width: auto;
+}
+
 
 
 /*Media Queries*/
