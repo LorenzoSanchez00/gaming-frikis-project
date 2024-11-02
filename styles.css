@@ -541,6 +541,32 @@ main{
     .btn-side{
         display: none;
     }
+    .review-container .reviewCard{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        width: 390px;
+        height: auto;
+        padding-top: 20px;
+    }
+    .reviewCard-image{
+        height: 100px;
+        width: 100px;
+        grid-row: 1fr;
+    }
+    .reviewCard-title{
+        font-size: 1.1em;
+        padding-left: 14px;
+    }
+    .reviewCard .reviewCard-date{
+        padding-left: 14px;
+    }
+    .reviewCard-text{
+        font-size: .8em;
+        padding: 14px;
+    }
+    .reviewCard-rating{
+        padding-left: 14px;
+    }
 }
 @media (max-width:1400px){
     .brands-container{
@@ -554,6 +580,10 @@ main{
         width: 240px;
         height: 110px;
     }
+    .busqueda-box-element img{
+        height: 40px;
+        width: auto;
+    }
 }
 @media (max-width: 1200px){
     .search{
@@ -561,6 +591,9 @@ main{
     }
     .txt-banner h1{
         font-size: 3.8em;
+    }
+    .review-container{
+        grid-template-columns: 1fr;
     }
 }
 @media (max-width: 960px) {
@@ -602,7 +635,9 @@ main{
     .busqueda-box-element h3{
         font-size: .9em;
     }
-    
+    .busqueda-box-element img{
+        display: none;
+    }
 }
 @media (max-width: 780px){
     main{
@@ -642,6 +677,9 @@ main{
     .card .card-txt{
         font-size: .9em;
     }
+    .review-container .reviewCard{
+        width: 280px;
+    }
 }
 @media (max-width: 500px){
     .header{
@@ -668,7 +706,15 @@ main{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(2,1fr);
     }
+    .review-container{
+        padding: 0px;
+    }
+    .review-container .reviewCard{
+        width: 90vw;
+        margin: 0px;
+    }
 }
+
 @media (max-width: 400px){
     .busqueda-box-element{
         max-width: 100px;
