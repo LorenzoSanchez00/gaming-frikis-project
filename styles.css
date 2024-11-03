@@ -461,6 +461,7 @@ main{
     padding: 6px;
     margin-top: 4px;
     border: none;
+    color: var(--nav-links);
 }
 .form textarea:focus{
     outline: 1px solid var(--nav-links-hover2);
